@@ -1,18 +1,24 @@
-# README for a newly created project.
+# Beer && Code 1 Year Party Web Presentation
 
-There are a couple of things you should do first, before you can use all of Git's power:
+I'm working on a presentation for a talk I'll give at our 1-year party.
 
-  * Add a remote to this project: in the Cloud9 IDE command line, you can execute the following commands
-    `git remote add [remote name] [remote url (eg. 'git@github.com:/ajaxorg/node_chat')]` [Enter]
-  * Create new files inside your project
-  * Add them to to Git by executing the following command
-    `git add [file1, file2, file3, ...]` [Enter]
-  * Create a commit which can be pushed to the remote you just added
-    `git commit -m 'added new files'` [Enter]
-  * Push the commit the remote
-    `git push [remote name] master` [Enter]
+I'm also borrowing inspiration (and some code) from Google's awesome [HTML5](http://slides.html5rocks.com) 
+[presentations](http://html5slides.googlecode.com/svn/trunk/template/index.html).
 
-That's it! If this doesn't work for you, please visit the excellent resources from [Github.com](http://help.github.com) and the [Pro Git](http://http://progit.org/book/) book.
-If you can't find your answers there, feel free to ask us via Twitter (@cloud9ide), [mailing list](groups.google.com/group/cloud9-ide) or IRC (#cloud9ide on freenode).
+Specifically, I'm following their example for the CSS3 and JavaScript, but the
+rest came from my brain-thoughts.
 
-Happy coding!
+I should also mention, I'm building this using the Cloud9 IDE and it's actually 
+really really cool. Go check it out.
+
+To run the thing, you need the following:
+
+* [node](http://nodejs.org)
+* [npm](http://npmjs.org)
+
+Then you need to type these things:
+
+    npm install
+    node app.js
+    
+Let me know what you think, and feel free to borrow!
