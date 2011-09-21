@@ -8,8 +8,8 @@ I'm also borrowing inspiration (and some code) from Google's awesome [HTML5](htt
 Specifically, I'm following their example for the CSS3 and JavaScript, but the
 rest came from my brain-thoughts.
 
-I should also mention, I'm building this using the Cloud9 IDE and it's actually 
-really really cool. Go check it out.
+I should also mention, I'm building this using the [Cloud9 IDE](http://cloud9ide.com/) and it's actually 
+really really cool. If you are looking at this because you have a GitHub account, you can log in and start using Cloud9. It comes with a node-capable workspace, so I'm able to run all this from the browser. Go check it out.
 
 To run the thing, you need the following:
 
