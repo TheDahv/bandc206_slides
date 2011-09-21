@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+  margin 0
+  padding 0
+  border 0
+  font-size 100%
+  font inherit
+  vertical-align baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+  display block
+
+/* Font and vertical rhythm */
+base_size = 21px;
+line_height = base_size * 1.5
+ratio = 1.3
+step_one = base_size * ratio
+step_one_margin = (line_height / step_one) * line_height
+
+step_two = step_one * ratio
+step_two_margin = (line_height / step_two) * line_height
+
+step_three = step_two * ratio
+step_three_margin = (line_height / step_three) * line_height
+
+step_four = step_three * ratio
+step_four_margin = (line_height / step_four) * line_height
+
+body
+  height 100%
+  line-height line_height
+  text-align center
+  font-family 'Cabin', Helvetica, sans-serif;
+  font-size base_size
+  background-color #F3F4EB
+  color #412919
+
+a, a:visited
+  color #412919
+
+h1, h2, h3, h4
+  font-family 'Lobster', Arial, sans-serif;
+
+h1
+  font-size step_four
+  margin step_four_margin 0
+
+h2
+  font-size step_three
+  margin step_three_margin 0
+
+h3
+  font-size step_two
+  margin step_two_margin 0
+
+h4
+  font-size step_one
+  margin step_one_margin 0
+
+p
+  margin line_height 0
+
+header  
+  z-index 9999
+  height 150px
+  padding 20px 0 10px 0
+  background-color #412919    
+  h1
+    padding 20px
+    color #F4AC00
+  p
+    font-style italic
+    color #F3F4EB
+
+#main    
+  padding 60px 0
+  margin 0 auto
+  width 960px
+
+#home_page_content
+  text-align left
+  img
+    float right
+    margin-left 16px
+    height 600px
+  ul
+    list-style none
+
+/* Slide show stuff */
+#controls
+  position relative
+  top -70px
+  z-index 9999
+
+#slide_deck
+  overflow hidden
+  width 100%
+  height 80%
+  left 0
+  top 80px
+  position absolute
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  -moz-transition: -moz-transform 1s ease-in-out;
+  -o-transition: -o-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+
+
+.slide.current
+  visibility visible
+  display block
+  margin-left -380px
+
+.slide.future
+  visibility visible
+  display block
+  margin-left 500px
+
+.slide.far_future
+  display block
+  margin-left 1500px
+
+.slide.past
+  visibility visible
+  display block
+  margin-left -1400px
+
+.slide.far_past
+  display block
+  margin-left -2400px
+
+.slide 
+  display none  
+  position absolute
+  left 50%
+  top 25%
+  overflow hidden
+  width 700px
+  height 500px
+  background-color #fff
+  
+  text-align left
+  padding line_height line_height
+
+  -webkit-box-shadow 1px 1px 2px 1px #333333
+  -moz-box-shadow 1px 1px 2px 1px #333333
+  box-shadow 1px 1px 2px 1px #333333
+
+  -webkit-border-radius 8px
+  -moz-border-radius 8px
+
+  -webkit-transition: margin 0.25s ease-in-out;
+  -moz-transition: margin 0.25s ease-in-out;
+  -o-transition: margin-left 0.25s ease-in-out;
+  transition: margin 0.25s ease-in-out;
+
+  border-radius 8px
+  ul
+    margin-left step_two_margin
+
+.slide_image
+  float right
+  margin-top line_height

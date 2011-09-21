@@ -1,0 +1,10 @@
+{
+    "name": "bandc206_slides",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "jade": ">= 0.0.1",
+        "express": ">= 2.3.10",
+        "stylus": ">= 0.13.0"
+    }
+}
