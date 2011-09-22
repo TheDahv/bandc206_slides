@@ -30,8 +30,9 @@ bandc.nextSlide = function () {
     }
     
     location.replace(slides[idx + 1]);
-
     bandc.current_index = idx + 1;
+    
+    bandc.updatePositionIndicator();
   }
 };
 
@@ -61,6 +62,8 @@ bandc.previousSlide = function () {
     
     location.replace(slides[idx - 1]);
     bandc.current_index = idx - 1;
+    
+    bandc.updatePositionIndicator();
   }
 };
 
@@ -94,8 +97,16 @@ bandc.moveToSlide = function (slide_name) {
         $(slides[idx + 2]).addClass('far_future');
       }
     }
+    bandc.updatePositionIndicator();
   }
 };
+
+bandc.updatePositionIndicator = function () {
+  var idx = bandc.current_index + 1;
+  var length = bandc.slide_list.length;
+  
+  $('#position_indicator').text(idx + ' of ' + length);
+}
 
 $(function () {
   if (document.location.pathname.indexOf('/slides') >= 0) {
@@ -111,6 +122,7 @@ $(function () {
     } else {
       bandc.moveToSlide(document.location.hash);      
     }
+    bandc.updatePositionIndicator();
     
     $('#previous').click(function (e) {
       bandc.previousSlide();
@@ -133,6 +145,18 @@ $(function () {
         break;
       case 37: 
         bandc.previousSlide();
+        break;
+      case 34:
+        bandc.moveToSlide(bandc.slide_list[bandc.slide_list.length - 1]);
+        break;
+      case 35:        
+        bandc.moveToSlide(bandc.slide_list[bandc.slide_list.length - 1]);
+        break;
+      case 33:
+        bandc.moveToSlide(bandc.slide_list[0]);
+        break;
+      case 36:
+        bandc.moveToSlide(bandc.slide_list[0]);
         break;
       } 
     });
