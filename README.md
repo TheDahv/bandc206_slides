@@ -14,6 +14,7 @@ really really cool. If you are looking at this because you have a GitHub account
 To run the thing, you need the following:
 
 * [node](http://nodejs.org)
+* A big monitor
 
 Then you need to type this into a terminal in the project folder:
 
