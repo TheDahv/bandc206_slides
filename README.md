@@ -14,11 +14,11 @@ really really cool. If you are looking at this because you have a GitHub account
 To run the thing, you need the following:
 
 * [node](http://nodejs.org)
-* [npm](http://npmjs.org)
 
-Then you need to type these things:
+Then you need to type this in the project folder:
 
-    npm install
     node app.js
+
+The required modules are already included in the source (perhaps it's not the best practice, but it's just a slide show)
     
 Let me know what you think, and feel free to borrow!
